@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "FLAnimatedImage" do |fs|
-    fs.platforms = "ios, tvos"
+    fs.platforms = "ios", "tvos"
     fs.dependency 'PINRemoteImage/Core'
     fs.source_files = 'Pod/Classes/Image Categories/FLAnimatedImageView+PINRemoteImage.h', 'Pod/Classes/Image Categories/FLAnimatedImageView+PINRemoteImage.m'
     fs.dependency 'FLAnimatedImage', '>= 1.0'
